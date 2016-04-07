@@ -68,3 +68,5 @@ for elty in (Float32,Float64)
         @test round(elty2,A) == fill(round(elty2,x),(10,10,10))
     end
 end
+
+@test float(Char) == Any
